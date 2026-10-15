@@ -1,7 +1,6 @@
 name = "hi-studio"
 compatibility_date = "2026-09-01"
 pages_build_output_dir = "./dist"
-account_id = "ebb60884050ceb5a3565e132a7ef9394"
 
 # Secrets are NOT set here. Locally they come from .dev.vars; in production use `npx wrangler pages secret put <NAME>`:
 #   JWT_SECRET, ADMIN_PASSWORD_HASH, RAZORPAY_KEY_ID, RAZORPAY_KEY_SECRET, RAZORPAY_WEBHOOK_SECRET
