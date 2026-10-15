@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none" class="hi-studio-logo">
+  <defs>
+    <style>
+      .hi-bg-box { fill: #FBF5E8; }
+      .hi-bar { fill: #FBF5E8; }
+      .hi-text-dark { fill: #0D0C0B; }
+      .hi-text-light { fill: #FBF5E8; }
+      .hi-draw-stroke { stroke: #0D0C0B; stroke-width: 28; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .hi-draw-flourish { stroke: #FBF5E8; stroke-width: 24; stroke-linecap: round; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Top accent bar -->
+  <rect x="250" y="180" width="145" height="14" rx="2" class="hi-bar" id="logo-top-bar" />
+
+  <!-- Center Ivory Box -->
+  <rect x="250" y="218" width="480" height="430" rx="4" class="hi-bg-box" id="logo-box" />
+
+  <!-- The "Hi" Calligraphic Monogram -->
+  <!-- Left Entry loop -->
+  <path d="M 210 430 C 240 370, 310 260, 420 235 C 440 230, 420 340, 370 410 C 320 480, 280 540, 310 560 C 340 570, 380 520, 430 450 L 440 350 L 430 650" class="hi-draw-stroke" id="logo-stroke-h" />
+
+  <!-- Crossbar flourish breaking out of box -->
+  <path d="M 270 645 C 380 570, 520 510, 780 460 C 800 455, 780 490, 740 480 C 700 470, 500 520, 350 620" class="hi-draw-stroke" id="logo-stroke-cross" />
+
+  <!-- 'i' stem and dot -->
+  <path d="M 540 370 C 510 430, 510 450, 540 430 C 570 400, 680 310, 780 320 C 800 322, 795 380, 780 395" class="hi-draw-stroke" id="logo-stroke-i" />
+  <circle cx="560" cy="320" r="14" class="hi-text-dark" id="logo-dot-i" />
+
+  <!-- External Flourishes that extend past ivory box -->
+  <path d="M 720 470 C 760 462, 790 460, 800 475 C 795 490, 760 485, 730 480" class="hi-draw-flourish" id="logo-outer-flourish" />
+
+  <!-- STUDIO Typography (Bold Editorial Condensed Grotesque) -->
+  <g id="logo-text-studio" transform="translate(245, 830)">
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="900" font-size="160" letter-spacing="0.08em" class="hi-text-light">STUDIO</text>
+  </g>
+
+  <!-- Bottom accent underline under 'IO' -->
+  <rect x="590" y="855" width="145" height="14" rx="2" class="hi-bar" id="logo-bottom-bar" />
+</svg>

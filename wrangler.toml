@@ -1,0 +1,28 @@
+name = "hi-studio"
+compatibility_date = "2026-09-01"
+pages_build_output_dir = "./dist"
+account_id = "ebb60884050ceb5a3565e132a7ef9394"
+
+# Secrets are NOT set here. Locally they come from .dev.vars; in production use `npx wrangler pages secret put <NAME>`:
+#   JWT_SECRET, ADMIN_PASSWORD_HASH, RAZORPAY_KEY_ID, RAZORPAY_KEY_SECRET, RAZORPAY_WEBHOOK_SECRET
+# Optional var: ALLOWED_ORIGIN (one exact origin) only if the API must be called from another site. Never "*".
+
+# Public media: admin-uploaded portfolio photos (photos/...) and product images (products/...), served by /api/media.
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "hi-studio-media"
+
+# Private customer photos for orders. Only reachable through signed-in admin routes.
+[[r2_buckets]]
+binding = "UPLOADS"
+bucket_name = "hi-studio-uploads"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "hi-studio-db"
+# PRODUCTION: replace with the id printed by `npx wrangler d1 create hi-studio-db` (see RUN.md).
+database_id = "REPLACE_WITH_PRODUCTION_D1_DATABASE_ID"
+# Local development only: names the on-disk database in .wrangler/state used by `wrangler pages dev`
+# and every `--local` d1 command. Keep it as is so local data survives changing database_id.
+preview_database_id = "hi-studio-local-db-001"
+migrations_dir = "migrations"

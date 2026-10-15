@@ -1,0 +1,80 @@
+{
+  "brand": {
+    "studio_name": {
+      "value": "Hi Studio",
+      "is_placeholder": false,
+      "source": "Derived directly from Logo.jpeg monogram and wordmark"
+    },
+    "tagline": {
+      "value": "The moment the shutter closes and time holds still.",
+      "is_placeholder": true,
+      "note": "Studio brand philosophy statement. Configurable in Admin Splash Settings."
+    },
+    "legal_company_name": {
+      "value": "Hi Studio Photography Private Limited",
+      "is_placeholder": true,
+      "note": "Replace with official registered company name for GST invoice headers"
+    }
+  },
+  "contact": {
+    "phone": {
+      "value": "+91 79041 40477",
+      "is_placeholder": false,
+      "source": "Imported from reference project configuration"
+    },
+    "whatsapp_number": {
+      "value": "917904140477",
+      "is_placeholder": false,
+      "source": "Imported from reference project configuration"
+    },
+    "email": {
+      "value": "hello@histudio.in",
+      "is_placeholder": true,
+      "note": "Replace with primary studio inquiry email address"
+    },
+    "studio_address": {
+      "street": "Hi Studio Creative Pavilion, 42 Avinashi Road, Race Course",
+      "city": "Coimbatore",
+      "state": "Tamil Nadu",
+      "pincode": "641018",
+      "country": "India",
+      "is_placeholder": true,
+      "note": "Replace with physical boutique studio address"
+    },
+    "instagram_handle": {
+      "value": "@histudio.visuals",
+      "is_placeholder": true,
+      "note": "Replace with official studio Instagram profile link"
+    }
+  },
+  "shop": {
+    "currency": "INR",
+    "currency_symbol": "₹",
+    "gst_number": {
+      "value": "33AAACH1234F1Z5",
+      "is_placeholder": true,
+      "note": "Replace with studio official State GSTIN"
+    },
+    "standard_shipping_paise": {
+      "value": 25000,
+      "is_placeholder": false,
+      "formatted": "₹250"
+    },
+    "free_shipping_threshold_paise": {
+      "value": 499900,
+      "is_placeholder": false,
+      "formatted": "₹4,999"
+    },
+    "razorpay_key_id": {
+      "value": "rzp_test_1DP5mmOlF5G5ag",
+      "is_placeholder": true,
+      "note": "Replace with live Razorpay Key ID in Cloudflare Pages environment variables"
+    }
+  },
+  "policies": {
+    "shipping_policy": "All fine art frames and albums are handcrafted to order in our Coimbatore studio workshop. Custom framing takes 4 to 6 business days before being packed in museum-grade moisture-sealed wooden crates. Transit via premium surface courier takes 3 to 5 days across India.",
+    "returns_and_refunds": "Because each fine art frame and personalized print is custom-crafted to your selected dimension and photograph, returns are accepted solely in the rare event of transit damage or fabrication defect. Claims must be submitted within 48 hours of delivery with packaging photos.",
+    "privacy_policy": "Hi Studio respects the sanctity of your private memories. Photographs submitted for custom framing or taken during commissioned sessions are never shared publicly or used for marketing without explicit written consent.",
+    "terms_of_service": "By placing an order for photography services or archival framing, the client agrees to standard commissioning terms, delivery schedules, and copyright agreements governed by the laws of Tamil Nadu, India."
+  }
+}

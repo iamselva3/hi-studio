@@ -1,0 +1,46 @@
+{
+  "name": "hi-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n \"VITE,FUNCS\" -c \"cyan,magenta\" \"vite\" \"npm:dev:funcs\"",
+    "dev:vite": "vite",
+    "dev:funcs": "wrangler pages dev public --port 8788",
+    "images": "node scripts/process-images.mjs",
+    "upload": "node scripts/upload-r2.mjs",
+    "migrate": "wrangler d1 migrations apply hi-studio-db --local",
+    "migrate:remote": "wrangler d1 migrations apply hi-studio-db --remote",
+    "seed": "node scripts/seed-d1.mjs",
+    "seed:remote": "node scripts/seed-d1.mjs --remote",
+    "hash-password": "node scripts/hash-password.mjs",
+    "typecheck:functions": "tsc -p functions --noEmit",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && npm run typecheck:functions && wrangler pages deploy dist"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.750.0",
+    "framer-motion": "^12.4.7",
+    "gsap": "^3.12.7",
+    "lucide-react": "^0.475.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.1.5"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250214.0",
+    "@types/node": "^22.13.4",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
+    "postcss": "^8.5.2",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0",
+    "wrangler": "^3.109.1"
+  }
+}
