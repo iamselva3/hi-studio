@@ -17,7 +17,8 @@
     "typecheck:functions": "tsc -p functions --noEmit",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && npm run typecheck:functions && wrangler pages deploy dist"
+    "deploy": "npm run build && npm run typecheck:functions && wrangler pages deploy dist",
+    "postinstall": "node scripts/patch-wrangler.mjs"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.750.0",

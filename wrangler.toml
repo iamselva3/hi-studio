@@ -20,7 +20,7 @@ bucket_name = "hi-studio-uploads"
 binding = "DB"
 database_name = "hi-studio-db"
 # PRODUCTION: replace with the id printed by `npx wrangler d1 create hi-studio-db` (see RUN.md).
-database_id = "REPLACE_WITH_PRODUCTION_D1_DATABASE_ID"
+database_id = "c1134b86-3867-414b-93b8-76a29b281101"
 # Local development only: names the on-disk database in .wrangler/state used by `wrangler pages dev`
 # and every `--local` d1 command. Keep it as is so local data survives changing database_id.
 preview_database_id = "hi-studio-local-db-001"
